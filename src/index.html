@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="./output.css" rel="stylesheet" />
+    <title>Kayque Othon - Portfolio</title>
+  </head>
+  <style>
+    .linkedin:hover .linkedin-title,
+    .curriculo:hover .cv-title,
+    .github:hover .github-title {
+      display: block;
+      transition: ease-in-out;
+      animation: showIcon ease-in-out .2s;
+    }
+
+    @keyframes showIcon {
+      from {
+        opacity: 0%;
+      }
+      to {
+        opacity: 100%;
+      }
+    }
+  </style>
+  <body class="flex justify-center bg-gray-950 text-slate-50">
+
+    <div class="container flex flex-col items-center gap-10">
+
+        <!--  NAVBAR  -->
+        <div id="navbar" class="flex flex-row justify-center items-center fixed m-0 rounded-b-lg bg-purple-400 bg-opacity-40 min-w-72 min-h-16 shadow-2xl backdrop-blur-sm z-50">
+          <ul class="flex gap-10">
+            <li class="linkedin text-2xl hover:text-red-500 transition"> 
+              <a href="https://www.linkedin.com/in/kayque-othon" class="flex flex-col justify-center items-center transition ease-in-out delay-150 hover:-translate-y-2"> 
+                <i class='bx bxl-linkedin-square'></i> 
+                <p class="linkedin-title hidden text-xs absolute translate-y-5">Linkedin</p> 
+              </a> 
+            </li>
+            <li class="curriculo text-2xl hover:text-red-500 transition">
+              <a href="./cv/Curriculo Kayque Othon de Araújo Rolim.pdf" class="flex flex-col justify-center items-center transition ease-in-out delay-150 hover:-translate-y-2"> 
+                <i class='bx bxs-file-pdf'></i> 
+                <p class="cv-title hidden text-xs absolute translate-y-5">Curriculo</p> 
+              </a>
+            </li>
+            <li class="github text-2xl hover:text-red-500 transition"> 
+              <a href="https://www.github.com/othonkayque" class="flex flex-col justify-center items-center transition ease-in-out delay-150 hover:-translate-y-2"> 
+                <i class='bx bxl-github'></i> 
+                <p class="github-title hidden text-xs absolute translate-y-5">Github</p> 
+              </a> 
+            </li>
+            <li class="github text-2xl hover:text-red-500 transition"> 
+              <a href="mailto:othoncode@gmail.com" class="flex flex-col justify-center items-center transition ease-in-out delay-150 hover:-translate-y-2"> 
+                <i class='bx bxs-envelope'></i>
+                <p class="github-title hidden text-xs absolute translate-y-5">Gmail</p> 
+              </a> 
+            </li>
+          </ul>
+        </div>
+
+        <!--  HEADER  -->
+      <header id="header" class="mt-28 flex justify-around">
+        <ul class="flex flex-col gap-3">
+          <li>
+            <div class="flex gap-5  min-h-52">
+              <div class="flex justify-center items-end min-h-full min-w-32 rounded bg-cover bg-center" style='background-image: url("./img/img-eu.jpg")'></div>
+              <div class="flex flex-col gap-2">
+                <h1 class="text-2xl font-extrabold"> <i class="bx bx-code-alt text-red-700"></i> Kayque Othon  </h1>
+                <h3 class="text-base font-medium text-slate-800">Web Developer.</h3>
+                <p class="w-80 text-sm text-slate-500">
+                  Meu nome <strong>Kayque</strong> eu tenho 20 anos e Sou estudante de <strong>Sistemas Para Internet</strong>, nunca me limitei a estudar 
+                  apenas o que foi passado na faculdade. estudo e desenvolvo projetos por conta propria desde meus 17 anos de idade. 
+                </p>
+                <div class="flex flex-row gap-3">
+                  <span class="whitespace-nowrap rounded-full bg-green-600 px-1.5 py-0.5 text-xs text-green-950">
+                    <p>Português</p>
+                  </span>
+                  <span class="whitespace-nowrap rounded-full bg-blue-400 px-1.5 py-0.5 text-xs text-blue-950">
+                    <p>Inglês</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </header>
+
+        <!--  MY PROJECTS  -->
+      <section class="projects flex flex-col items-center gap-4">
+        <h2 class="font-medium">Projetos</h2>
+        <p class="text-sm text-slate-500">Projetos que desenvolvi</p>
+        <div class="flex flex-wrap items-center justify-center gap-2 gap-x-5">
+          <a href="https://github.com/othonkayque/Telecom-OSNET-Website">
+            <div id="project-img-1" class="flex justify-center items-end h-64 w-52 rounded bg-gradient-to-t via-transparent from-gray-950 opacity-70 absolute z-10"></div>
+            <div id="project-img-1" class="flex justify-center items-end  h-64 w-52 rounded bg-red-600 bg-cover bg-cneter" style="background-image: url('./img/interface_registro.jpg');">
+              <h2 class="text-sm mb-4 z-20">O.S NET</h2>
+            </div>
+          </a>
+          <a href="https://github.com/othonkayque/Node-Financial-Manager">
+            <div id="project-img-1" class="flex justify-center items-end h-64 w-52 rounded bg-gradient-to-t via-transparent from-gray-950 opacity-70 absolute z-10"></div>
+            <div id="project-img-1" class="flex justify-center items-end  h-64 w-52 rounded bg-red-600" style="background-image: url('');">
+              <h2 class="text-sm mb-4 z-20">Financial Manager</h2>
+            </div>
+          </a>
+        </div>
+      </section>
+      
+        <!--  SKILLS  -->
+      <section class="skills mb-11 flex flex-col items-center gap-4">
+        <h2 class="font-medium">Habilidades</h2>
+        <p class="text-sm text-slate-500">Tecnologias em que tenho conhecimento.</p> 
+        <div class="flex w-2/4 flex-wrap items-center justify-center gap-11 gap-x-14">
+
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="min-h-14 min-w-14 rounded bg-yellow-600 flex justify-center items-center text-3xl hover:"> <i class='bx bxl-javascript'></i> </div>
+            <p>Javascript</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="min-h-14 min-w-14 rounded bg-orange-600 flex justify-center items-center text-3xl hover:"> <i class='bx bxl-html5' ></i> </div>
+            <p>HTML5</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="css min-h-14 min-w-14 rounded bg-blue-500 flex justify-center items-center text-3xl"> <i class='bx bxl-css3' ></i> </div>
+            <p>CSS3</p>
+          </div>
+
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="nodejs min-h-14 min-w-14 rounded bg-green-600 flex justify-center items-center text-3xl"> <i class='bx bxl-nodejs' ></i> </div>
+            <p>Node.js</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="java min-h-14 min-w-14 rounded bg-white flex justify-center items-center text-gray-950 text-3xl"> <i class='bx bxl-java' ></i> </div>
+            <p>Java</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="php min-h-14 min-w-14 rounded bg-gray-700 flex justify-center items-center text-3xl"> <i class='bx bxl-php' ></i> </div>
+            <p>PHP</p>
+          </div>
+
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="tailwind min-h-14 min-w-14 rounded bg-blue-500 flex justify-center items-center text-3xl"> <i class='bx bxl-tailwind-css' ></i> </div>
+            <p>Tailwind</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="mongodb min-h-14 min-w-14 rounded bg-green-600 flex justify-center items-center text-3xl"> <i class='bx bxl-mongodb' ></i> </div>
+            <p>Mongodb</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="git min-h-14 min-w-14 rounded bg-orange-600 flex justify-center items-center text-3xl"> <i class='bx bxl-git' ></i> </div>
+            <p>Git</p>
+          </div>
+
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="docker min-h-14 min-w-14 rounded bg-blue-900 flex justify-center items-center text-3xl"> <i class='bx bxl-docker' ></i> </div>
+            <p>Docker</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="wordpress min-h-14 min-w-14 rounded bg-blue-900 flex justify-center items-center text-3xl"> <i class='bx bxl-wordpress'></i> </div>
+            <p>Wordpress</p>
+          </div>
+          <div class="flex flex-col items-center w-5 h-10">
+            <div class="mysql min-h-14 min-w-14 rounded bg-orange-600 flex justify-center items-center text-3xl"> <i class='bx bxs-data'></i> </div>
+            <p>MySQL</p>
+          </div>
+        </div>
+      </section>
+
+        <!--  FOOTER  -->
+      <footer class="">
+
+      </footer>
+
+    </div>
+    
+  </body>
+  <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+</html>
